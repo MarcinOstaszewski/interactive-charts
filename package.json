@@ -1,0 +1,24 @@
+{
+  "name": "interactive-charts",
+  "version": "1.0.0",
+  "description": "interactive charts created with ReactJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcinOstaszewski/interactive-charts.git"
+  },
+  "keywords": [
+    "chart",
+    "interactive",
+    "ReactJS"
+  ],
+  "author": "MarcinOstaszewski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcinOstaszewski/interactive-charts/issues"
+  },
+  "homepage": "https://github.com/MarcinOstaszewski/interactive-charts#readme"
+}
