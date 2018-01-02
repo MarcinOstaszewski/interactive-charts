@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Bars from '../js/Bars.jsx';
 
-class Chart extends Component {
+class Chart extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -23,27 +23,23 @@ class Chart extends Component {
 			<div className="width-full">
 				<div className="container">
 					<h1 className="header">Interactive Charts</h1>
-				</div>
-				<div className="container-input">
-					<div className="column-container">
+					<div className="container-input">
 						<label className="label" htmlFor="ratesQuantity">Input quantity of rates
 						<input 
+							className = "inputField"
 							name="ratesQuantity"
 							type="number"
 							onChange={this.handleChange}
 							value={this.state.ratesQuantity}/>
 						</label>
-					</div>
-					<div className="column-container">
 						<label className="label" htmlFor="percentage">Input percentage
 						<input 
+							className = "inputField"
 							name="percentage"
 							type="number"
 							onChange={this.handleChange}
 							value={this.state.percentage}/>
 						</label>
-					</div>
-					<div className="column-container">
 						<label className="label" htmlFor="loanQuota">Input loan quota
 						<input 
 							className = "inputField"
@@ -62,4 +58,4 @@ class Chart extends Component {
 	}
 }
 
-export default Chart;
+module.exports = Chart;

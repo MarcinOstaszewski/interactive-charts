@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import Chart from '../js/Chart.jsx';
-// import '../css/main.css';
+require('../sass/main.scss');
 
 document.addEventListener('DOMContentLoaded', function () {
 

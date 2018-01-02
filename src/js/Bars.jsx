@@ -1,18 +1,22 @@
 import React, { Component } from 'react';
 
-class Bars extends Component {
+class Bars extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            quantity : this.props.quantity
         }
     }
 
     render() {
+        
+
+        let barWidth = 640 / this.props.quantity;
+        let barStyle = {width: {barWidth}};
         let bars = [];
-        for (let i = 1; i <= this.state.quantity; i++) {
-        bars.push(<div className="bar" key={i}></div>);
+        for (let i = 1; i <= this.props.quantity; i++) {
+        bars.push(<div className="bar" key={i} style={barStyle}></div>);
         }
+
 
         return (
             <div className="chart">	
@@ -22,4 +26,4 @@ class Bars extends Component {
     }
 }
 
-export default Bars;
+module.exports = Bars;
