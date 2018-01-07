@@ -9,9 +9,14 @@ class Bars extends React.Component {
 
     render() {
         
+        let barWidth = 640 / this.props.quantity + "px";
 
-        let barWidth = 640 / this.props.quantity;
-        let barStyle = {width: {barWidth}};
+        let barStyle = {
+            color: 'blue',
+            fontSize: 200,
+            width: barWidth
+          };
+
         let bars = [];
         for (let i = 1; i <= this.props.quantity; i++) {
         bars.push(<div className="bar" key={i} style={barStyle}></div>);

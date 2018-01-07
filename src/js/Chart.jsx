@@ -51,7 +51,7 @@ class Chart extends React.Component {
 					</div>
 				</div>
 				<div className="container">										
-						<Bars quantity={this.state.ratesQuantity} />   
+						<Bars quantity={this.state.ratesQuantity} percentage={this.state.percentage} quota={this.state.loanQuota}/>   
 				</div>
 			</div>
 		);
